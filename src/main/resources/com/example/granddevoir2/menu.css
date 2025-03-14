@@ -1,0 +1,31 @@
+.root {
+    -fx-font-family: "Courier New";
+    -fx-background-color: black;
+}
+
+.game-title {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 10, 0.5, 0, 0);
+}
+
+.menu-button {
+    -fx-font-size: 20px;
+    -fx-background-color: linear-gradient(#ff7f50, #ff4500);
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 0);
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+.menu-button:hover {
+    -fx-background-color: linear-gradient(#ff6347, #ff0000);
+    -fx-effect: dropshadow(gaussian, rgba(255,255,255,0.75), 5, 0.5, 0, 0);
+}
+
+/* Footer text */
+.game-footer {
+    -fx-font-size: 12px;
+    -fx-fill: gray;
+}

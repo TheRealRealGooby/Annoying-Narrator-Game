@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.VBox?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.granddevoir2.MenuController"
+            stylesheets="@menu.css">
+
+    <top>
+        <Text text="Annoying Narrator Game"
+              styleClass="game-title"
+              BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Button fx:id="New_Game" text="New Game" onAction="#onNewGameClick" styleClass="menu-button"/>
+            <Button fx:id="Options" text="Options" onAction="#onOptionsClick" styleClass="menu-button"/>
+            <Button fx:id="Help" text="Help" onAction="#onHelpClick" styleClass="menu-button"/>
+            <Button text="Exit" onAction="#onExitClick" styleClass="menu-button"/>
+        </VBox>
+    </center>
+
+    <!-- Credite sau alt text -->
+    <bottom>
+        <Text text="© 2024 Bucur Podeanu Studios"
+              styleClass="game-footer"
+              BorderPane.alignment="CENTER"/>
+    </bottom>
+</BorderPane>

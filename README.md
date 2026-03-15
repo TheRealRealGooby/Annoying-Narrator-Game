@@ -1,24 +1,33 @@
 Annoying Narrator Game
 
 A strategic 2D grid-based survival game built with JavaFX and Maven. The game features a persistent, "annoying" narrator that provides sarcastic feedback on player actions.
-# Execution Instructions
 
-To run this project on Ubuntu (or any system with Maven and Java 21+), follow these steps:
+# How to Run
 
-    Clean the project build:
-    Bash
+The game is cross-platform and can be executed on Windows, macOS, or Linux.
+Run the game using the Terminal (All Platforms):
 
+    Navigate to project root folder:
+    cd Annoying-Narrator-Game
+
+    Clean build artifacts:
     mvn clean
 
-    Run the application:
-    Bash
-
+    Launch application:
     mvn javafx:run
 
-Note: Ensure you have the necessary GStreamer codecs installed on Ubuntu for the background music to function.
-# The Concept: Why "Annoying Narrator"?
+OS Specific Prerequisites
 
-The game is titled Annoying Narrator Game because every action the player takes is met with snarky, sarcastic, or insulting commentary in the message log. Whether you are building, fighting, or simply failing to have enough resources, the narrator is there to remind you of your "inadequacy".
+    Windows: No extra steps required if JDK 21 is installed.
+
+    macOS: No extra steps required.
+
+    Linux (Ubuntu/Debian):
+
+        Install GStreamer plugins for MP3 support
+
+        Run: sudo apt install libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libgstreamer-plugins-good1.0-dev libgstreamer-plugins-ugly1.0-dev
+
 # Gameplay Mechanics
 # The Grid World
 
